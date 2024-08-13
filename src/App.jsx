@@ -1,9 +1,10 @@
 import './App.scss'
+import CustomRouter from './routes'
 
 function App() {
   return (
     <div className="App">
-      app
+      <CustomRouter />
     </div>
   )
 }
