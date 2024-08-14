@@ -4,7 +4,9 @@ div.Navbar {
   width: 100%;
   @include var.flex-container(row, space-between, center);
   padding: 0 10%;
-  height: 125px;
+  height: 17.5vh;
+  max-height: 128px;
+  min-height: 100px;
   background-color: var.$accent-green;
   box-shadow: var.$shadow-1;
   position: fixed;

@@ -3,7 +3,7 @@
 @use "./Components/Navbar/Navbar";
 @use "./Components/Footer/Footer";
 
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,8 @@
   padding: 0;
   font-family: "Anuphan", sans-serif;
   color: var.$text-black;
-  html, html body {
+  html,
+  html body {
     overscroll-behavior: none;
     scroll-behavior: smooth;
   }
@@ -22,6 +23,12 @@ div.App {
   main {
     background-color: var.$background-white;
     width: 100%;
-    margin-top: 125px;
+    margin-top: 17.5vh;
+    @media (height > 730px) {
+      margin-top: 128px;
+    }
+    @media (height < 570px) {
+      margin-top: 100px;
+    }
   }
 }
