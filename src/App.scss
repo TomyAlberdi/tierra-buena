@@ -1,4 +1,7 @@
-@use "var";
+@use "./var";
+@use "./Pages/Header/Header";
+@use "./Components/Navbar/Navbar";
+@use "./Components/Footer/Footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 
@@ -10,5 +13,15 @@
   color: var.$text-black;
   html, html body {
     overscroll-behavior: none;
+    scroll-behavior: smooth;
+  }
+}
+
+div.App {
+  @include var.flex-container(column, center, center);
+  main {
+    background-color: var.$background-white;
+    width: 100%;
+    margin-top: 125px;
   }
 }

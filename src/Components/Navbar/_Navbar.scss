@@ -1,0 +1,50 @@
+@use "../../var";
+
+div.Navbar {
+  width: 100%;
+  @include var.flex-container(row, space-between, center);
+  padding: 0 10%;
+  height: 125px;
+  background-color: var.$accent-green;
+  box-shadow: var.$shadow-1;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  section.iconName {
+    @include var.flex-container(row, center, center);
+    gap: 25px;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+    div.name {
+      @include var.flex-container(column, center, center);
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: var.$text-light;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  nav {
+    height: 100%;
+    @include var.flex-container(row, center, center);
+    span {
+      @include var.flex-container(row, center, center);
+      height: 100%;
+      width: 150px;
+      font-size: 1.25rem;
+      transition: 0.5s ease all;
+      color: var.$text-light;
+      &:hover {
+        transition: 0.5s ease all;
+        background-color: var.$light-green;
+        color: var.$text-black;
+        cursor: pointer;
+      }
+    }
+  }
+}
