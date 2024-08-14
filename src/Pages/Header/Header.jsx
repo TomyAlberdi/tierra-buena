@@ -26,10 +26,13 @@ const Header = () => {
       >
         {
           imgs.map((img, index) => {
-            return (<SwiperSlide key={index} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img})`}}/>)
+            return (<SwiperSlide key={index} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(${img})`}}/>)
           })
         }
       </Swiper>
+      <section className="info">
+        eyyyyyyyyyyyyyy
+      </section>
     </div>
   )
 }

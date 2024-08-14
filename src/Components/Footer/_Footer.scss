@@ -2,7 +2,7 @@
 
 footer {
   width: 100%;
-  background-color: var.$accent-green;
+  background-color: var.$primary-green;
   @include var.flex-container(column, center, center);
   padding: 2% 10%;
   gap: 25px;
