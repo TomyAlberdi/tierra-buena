@@ -42,6 +42,7 @@ div.Navbar {
       font-size: 1.25rem;
       transition: 0.5s ease all;
       color: var.$text-light;
+      font-weight: 300;
       &:hover {
         transition: 0.5s ease all;
         background-color: var.$light-green;
