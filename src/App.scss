@@ -2,8 +2,10 @@
 @use "./Pages/Header/Header";
 @use "./Components/Navbar/Navbar";
 @use "./Components/Footer/Footer";
+@use "./Components/InfoHeader/InfoHeader";
 
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Spectral:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
