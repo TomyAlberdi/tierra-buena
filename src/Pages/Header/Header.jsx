@@ -13,7 +13,7 @@ let imgs = [
 
 const Header = () => {
   return (
-    <div className="Page Header">
+    <div className="Page Header" id="Header">
       <Swiper
         slidesPerView="1"
         autoplay={{

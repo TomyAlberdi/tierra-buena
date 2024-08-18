@@ -14,6 +14,7 @@ div.Navbar {
   z-index: 100;
   section.iconName {
     @include var.flex-container(row, center, center);
+    cursor: pointer;
     gap: 25px;
     img {
       width: 90px;
