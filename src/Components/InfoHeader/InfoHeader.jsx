@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 const InfoHeader = () => {
+
+  const [CoursesAmmount, setCoursesAmmount] = useState(1);
+  const [PeopleAmmount, setPeopleAmmount] = useState(1);
+  const targetCoursesAmmount = 20;
+  const targetPeopleAmmount = 150;
+
+  useEffect(() => {
+    const totalDuration = 1500;
+    const startTime = Date.now();
+
+    const updateAmounts = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / totalDuration, 1);
+      
+      const newCoursesAmmount = 1 + Math.round(progress * (targetCoursesAmmount - 1));
+      const newPeopleAmmount = 1 + Math.round(progress * (targetPeopleAmmount - 1));
+
+      setCoursesAmmount(newCoursesAmmount);
+      setPeopleAmmount(newPeopleAmmount);
+
+      if (progress < 1) {
+        requestAnimationFrame(updateAmounts);
+      }
+    };
+
+    requestAnimationFrame(updateAmounts);
+  }, [targetCoursesAmmount, targetPeopleAmmount]);
+
   return (
     <section className="infoHeader">
       <div className="title">
@@ -20,14 +48,14 @@ const InfoHeader = () => {
         <article className="stat">
           <span className="data">
             <span className="plus">+</span>
-            100
+            {CoursesAmmount}
           </span>
           <span className="name">Cursos realizados</span>
         </article>
         <article className="stat">
           <span className="data">
             <span className="plus">+</span>
-            100
+            {PeopleAmmount}
           </span>
           <span className="name">Personas nos eligieron</span>
         </article>
