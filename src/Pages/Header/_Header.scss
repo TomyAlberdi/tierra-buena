@@ -1,7 +1,6 @@
 @use "../../var";
 
 div.Header {
-  height: 82.5vh;
   position: relative;
   .mySwiper {
     height: inherit;
@@ -11,11 +10,5 @@ div.Header {
       filter: blur(2px);
       transform: scale(1.05);
     }
-  }
-  @media(height > 730px) {
-    height: calc(100vh - 128px);
-  }
-  @media(height < 570px) {
-    height: calc(100vh - 100px);
   }
 }

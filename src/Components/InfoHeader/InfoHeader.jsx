@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { AppContext } from "../../Hooks/AppContextComponent";
 
 const InfoHeader = () => {
 
+  const { targetCoursesAmmount, targetPeopleAmmount } = useContext(AppContext);
+
   const [CoursesAmmount, setCoursesAmmount] = useState(1);
   const [PeopleAmmount, setPeopleAmmount] = useState(1);
-  const targetCoursesAmmount = 20;
-  const targetPeopleAmmount = 150;
 
   useEffect(() => {
     const totalDuration = 1500;
@@ -31,7 +32,7 @@ const InfoHeader = () => {
   }, [targetCoursesAmmount, targetPeopleAmmount]);
 
   return (
-    <section className="infoHeader">
+    <section className="infoHeader" id="infoHeader">
       <div className="title">
         <h1>
           Tardes en <span>Tierra Buena</span>

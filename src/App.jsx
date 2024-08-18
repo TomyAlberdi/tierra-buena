@@ -1,24 +1,28 @@
 import { useEffect } from "react";
+import AppContextComponent from "./Hooks/AppContextComponent";
 import "./App.scss";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Pages/Header/Header";
+import SecondIntro from "./Pages/SecondIntro/SecondIntro";
 import { register } from "swiper/element";
 
 function App() {
-
   useEffect(() => {
-    register()
+    register();
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Header />
-      </main>
-      <Footer />
-    </div>
+    <AppContextComponent>
+      <div className="App">
+        <Navbar />
+        <main>
+          <Header />
+          <SecondIntro />
+        </main>
+        <Footer />
+      </div>
+    </AppContextComponent>
   );
 }
 

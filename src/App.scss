@@ -3,9 +3,10 @@
 @use "./Components/Navbar/Navbar";
 @use "./Components/Footer/Footer";
 @use "./Components/InfoHeader/InfoHeader";
+@use "./Pages/SecondIntro/SecondIntro";
 
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Spectral:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Spectral:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,6 +27,15 @@ div.App {
     background-color: var.$background-white;
     width: 100%;
     margin-top: 17.5vh;
+    .Page {
+      height: 82.5vh;
+      @media (height > 730px) {
+        height: calc(100vh - 128px);
+      }
+      @media (height < 570px) {
+        height: calc(100vh - 100px);
+      }
+    }
     @media (height > 730px) {
       margin-top: 128px;
     }
