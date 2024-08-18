@@ -3,8 +3,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { AppContext } from "../../Hooks/AppContextComponent";
 
 const InfoHeader = () => {
-
-  const { targetCoursesAmmount, targetPeopleAmmount } = useContext(AppContext);
+  const { targetCoursesAmmount, targetPeopleAmmount, handleScrollToSection } =
+    useContext(AppContext);
 
   const [CoursesAmmount, setCoursesAmmount] = useState(1);
   const [PeopleAmmount, setPeopleAmmount] = useState(1);
@@ -16,9 +16,11 @@ const InfoHeader = () => {
     const updateAmounts = () => {
       const elapsed = Date.now() - startTime;
       const progress = Math.min(elapsed / totalDuration, 1);
-      
-      const newCoursesAmmount = 1 + Math.round(progress * (targetCoursesAmmount - 1));
-      const newPeopleAmmount = 1 + Math.round(progress * (targetPeopleAmmount - 1));
+
+      const newCoursesAmmount =
+        1 + Math.round(progress * (targetCoursesAmmount - 1));
+      const newPeopleAmmount =
+        1 + Math.round(progress * (targetPeopleAmmount - 1));
 
       setCoursesAmmount(newCoursesAmmount);
       setPeopleAmmount(newPeopleAmmount);
@@ -41,8 +43,8 @@ const InfoHeader = () => {
           Encontrá inspiración en Atalaya - Un día de cursos artesanales para
           tejer, crear y conectar con la tradición.
         </p>
-        <button>
-        <IoIosArrowForward /> Ver más
+        <button onClick={() => handleScrollToSection("secondIntro")}>
+          <IoIosArrowForward /> Ver más
         </button>
       </div>
       <div className="stats">
