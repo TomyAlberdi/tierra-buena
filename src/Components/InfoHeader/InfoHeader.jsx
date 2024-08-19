@@ -40,7 +40,7 @@ const InfoHeader = () => {
           Tardes en <span>Tierra Buena</span>
         </h1>
         <p>
-          Encontrá inspiración en Atalaya - Un día de cursos artesanales para
+          Encontrá inspiración en Atalaya - Un día de cursos y talleres artesanales para
           tejer, crear y conectar con la tradición.
         </p>
         <button onClick={() => handleScrollToSection("secondIntro")}>
