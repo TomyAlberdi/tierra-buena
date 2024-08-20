@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Pages/Header/Header";
 import SecondIntro from "./Pages/SecondIntro/SecondIntro";
 import { register } from "swiper/element";
+import Courses from "./Pages/Courses/Courses";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <main>
           <Header />
           <SecondIntro />
+          <Courses />
         </main>
         <Footer />
       </div>

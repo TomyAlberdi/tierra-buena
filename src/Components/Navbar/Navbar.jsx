@@ -27,7 +27,7 @@ const Navbar = () => {
       </section>
       <nav>
         <span onClick={() => handleScrollToSection('secondIntro')}>Nosotros</span>
-        <span>Cursos</span>
+        <span onClick={() => handleScrollToSection('courses')}>Talleres</span>
         <span>Ubicación</span>
         <span>Contacto</span>
       </nav>
