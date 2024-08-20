@@ -41,6 +41,7 @@ section.infoHeader {
       background-color: var.$primary-green;
       color: var.$text-light;
       font-family: "Spectral", serif;
+      transition: all 0.3s ease-in-out;
       svg {
         path {
           transition: all 0.3s ease-in-out;
