@@ -32,8 +32,11 @@ section.SecondIntro {
     }
     &.images {
       position: relative;
+      min-width: 300px;
+      width: 20vw;
+      max-width: 400px;
       img {
-        height: 90%;
+        width: 100%;
         box-shadow: var.$shadow-1;
       }
       section.infoCard {
@@ -49,9 +52,8 @@ section.SecondIntro {
         @include var.flex-container(column, center, center);
         gap: 10%;
         article {
-          @include var.flex-container(row, flex-start, center);
+          @include var.flex-container(row, center , center);
           width: 100%;
-          padding-left: 20%;
           gap: 5%;
           svg {
             font-size: 4rem;
@@ -75,7 +77,14 @@ section.SecondIntro {
             color: var.$text-light;
             font-weight: 400;
             font-family: "Spectral", serif;
+            text-decoration: underline;
+            text-decoration-color: var.$accent-dark-yellow;
           }
+        }
+        h4 {
+          font-size: 1.2rem;
+          color: var.$text-light;
+          font-weight: 600;
         }
       }
     }
