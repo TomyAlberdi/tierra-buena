@@ -7,7 +7,7 @@ import Header from "./Pages/Header/Header";
 import SecondIntro from "./Pages/SecondIntro/SecondIntro";
 import { register } from "swiper/element";
 import Courses from "./Pages/Courses/Courses";
-import Location from "./Pages/Location/Location";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -22,7 +22,7 @@ function App() {
           <Header />
           <SecondIntro />
           <Courses />
-          <Location />
+          <Contact />
         </main>
         <Footer />
       </div>
