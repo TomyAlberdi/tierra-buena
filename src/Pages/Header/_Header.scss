@@ -1,0 +1,14 @@
+@use "../../var";
+
+div.Header {
+  position: relative;
+  .mySwiper {
+    height: inherit;
+    .swiper-slide {
+      height: inherit;
+      background-size: cover;
+      filter: blur(2px);
+      transform: scale(1.05);
+    }
+  }
+}

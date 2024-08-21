@@ -1,0 +1,97 @@
+@use "../../var";
+
+section.Contact {
+  @include var.flex-container(row, center, stretch);
+  padding: 2.5% 0;
+  gap: 2.5%;
+  background-color: var.$background-white;
+  div {
+    @include var.flex-container(column, flex-start, center);
+    width: 40vw;
+    h2 {
+      font-size: 2.5rem;
+      text-decoration: underline;
+      text-decoration-color: var.$accent-yellow;
+      font-weight: 500;
+      font-family: "Spectral", sans-serif;
+      margin-bottom: 2.5%;
+    }
+    &.location {
+      iframe {
+        width: 40vw;
+        height: 40vh;
+        border: none;
+        box-shadow: var.$shadow-1;
+        border-radius: 5px;
+      }
+      a {
+        background-color: var.$primary-green;
+        text-decoration: none;
+        color: var.$text-light;
+        width: 100%;
+        margin-top: 2.5%;
+        border-radius: 5px;
+        box-shadow: var.$shadow-2;
+        text-align: center;
+        cursor: pointer;
+        padding: 2% 0;
+        font-size: 1.25rem;
+        transition: 0.3s ease all;
+        &:hover {
+          transition: 0.3s ease all;
+          background-color: var.$light-green;
+          color: var.$text-black;
+        }
+      }
+    }
+    &.contactInfo {
+      section.contactInfoList {
+        article {
+          border: 1px solid var.$text-dark-gray;
+          border-radius: 5px;
+          padding: 2.5% 5vw;
+          gap: 20px;
+          box-shadow: var.$shadow-1;
+          @include var.flex-container(column, center, center);
+          margin-bottom: 20px;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+          button,
+          a {
+            @include var.flex-container(row, center, center);
+            background-color: var.$primary-green;
+            text-decoration: none;
+            color: var.$text-light;
+            width: 100%;
+            padding: 2% 0;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s ease all;
+            border: none;
+            font-size: 1.25rem;
+            transition: 0.3s ease all;
+            svg {
+              margin-left: 10px;
+              path {
+                fill: var.$text-light;
+              }
+            }
+            &:hover {
+              transition: 0.3s ease all;
+              background-color: var.$light-green;
+              color: var.$text-black;
+              svg {
+                path {
+                  fill: var.$text-black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

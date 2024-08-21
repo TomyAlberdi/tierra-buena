@@ -1,6 +1,14 @@
-@use "var";
+@use "./var";
+@use "./Pages/Header/Header";
+@use "./Components/Navbar/Navbar";
+@use "./Components/Footer/Footer";
+@use "./Components/InfoHeader/InfoHeader";
+@use "./Pages/SecondIntro/SecondIntro";
+@use "./Pages/Courses/Courses";
+@use "./Components/CourseCard/CourseCard";
+@use "./Pages/Contact/Contact";
 
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Spectral:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +16,33 @@
   padding: 0;
   font-family: "Anuphan", sans-serif;
   color: var.$text-black;
-  html, html body {
+  html,
+  html body {
     overscroll-behavior: none;
+    scroll-behavior: smooth;
+  }
+}
+
+div.App {
+  @include var.flex-container(column, center, center);
+  main {
+    width: 100%;
+    margin-top: 17.5vh;
+    .Page {
+      background-color: var.$background-white;
+      min-height: 82.5vh;
+      @media (height > 730px) {
+        height: calc(100vh - 128px);
+      }
+      @media (height < 570px) {
+        height: calc(100vh - 100px);
+      }
+    }
+    @media (height > 730px) {
+      margin-top: 128px;
+    }
+    @media (height < 570px) {
+      margin-top: 100px;
+    }
   }
 }
