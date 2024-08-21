@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from "react";
 
 export const AppContext = createContext();
 
@@ -15,7 +15,7 @@ const AppContextComponent = ({ children }) => {
       const sectionPosition = section.offsetTop;
       window.scrollTo({
         top: sectionPosition - navbarHeight,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -26,14 +26,9 @@ const AppContextComponent = ({ children }) => {
     navbarHeight,
     setNavbarHeight,
     handleScrollToSection,
-  }
+  };
 
-  return (
-    <AppContext.Provider value={data}>
-      {children}
-    </AppContext.Provider>
-  )
+  return <AppContext.Provider value={data}>{children}</AppContext.Provider>;
+};
 
-}
-
-export default AppContextComponent
+export default AppContextComponent;
