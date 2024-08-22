@@ -52,7 +52,7 @@ section.SecondIntro {
         @include var.flex-container(column, center, center);
         gap: 10%;
         article {
-          @include var.flex-container(row, center , center);
+          @include var.flex-container(row, center, center);
           width: 100%;
           gap: 5%;
           svg {
@@ -85,6 +85,47 @@ section.SecondIntro {
           font-size: 1.2rem;
           color: var.$text-light;
           font-weight: 600;
+        }
+      }
+    }
+  }
+  /* Query Mobile */
+  @media (max-width: 1024px) {
+    @include var.flex-container(column, center, center);
+    padding-left: 0;
+    div {
+      &.info {
+        width: 90%;
+        max-width: unset;
+        min-width: unset;
+        h2 {
+          font-size: 2.5rem;
+        }
+        p {
+          line-height: 1.75em;
+        }
+      }
+      &.images {
+        min-width: unset;
+        max-width: unset;
+        width: 90%;
+        padding: 5% 0 25%;
+        img {
+          width: 70%;
+        }
+        section.infoCard {
+          width: 70%;
+          height: 70%;
+          top: 20%;
+          right: 0;
+          article {
+            svg {
+              font-size: 2.5rem;
+            }
+            p {
+              font-size: 1.5rem;
+            }
+          }
         }
       }
     }

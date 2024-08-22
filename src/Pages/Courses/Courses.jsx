@@ -1,6 +1,28 @@
 import React from "react";
-import list from "../../Utils/CoursesInfo.json";
 import CourseCard from "../../Components/CourseCard/CourseCard";
+
+const coursesList = [
+  {
+    title: "Yoga",
+    imgUrl: "/yoga.jpg"
+  },
+  {
+    title: "Cocina",
+    imgUrl: "/cooking.jpg"
+  },
+  {
+    title: "Cerámica",
+    imgUrl: "/ceramics.jpg"
+  },
+  {
+    title: "Carpintería",
+    imgUrl: "/woodwork.jpg"
+  },
+  {
+    title: "Tejido",
+    imgUrl: "/knitting.jpg"
+  },
+];
 
 const Courses = () => {
   return (
@@ -10,7 +32,7 @@ const Courses = () => {
         <p>Contamos con experiencia realizando todo tipo de actividades.</p>
       </div>
       <div className="coursesList">
-        {list?.map((course, index) => {
+        {coursesList?.map((course, index) => {
           return <CourseCard data={course} key={index} />;
         })}
       </div>

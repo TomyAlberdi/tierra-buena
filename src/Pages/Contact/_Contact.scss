@@ -94,4 +94,21 @@ section.Contact {
       }
     }
   }
+  /* Query Mobile */
+  @media (max-width: 1024px) {
+    @include var.flex-container(column, center, center);
+    gap: 5vw;
+    div {
+      width: 90%;
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      &.location {
+        iframe {
+          width: 90vw;
+        }
+      }
+    }
+  }
 }
