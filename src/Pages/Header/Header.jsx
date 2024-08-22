@@ -5,10 +5,10 @@ import "swiper/css";
 import InfoHeader from "../../Components/InfoHeader/InfoHeader";
 
 let imgs = [
-  "http://kfkit.rometheme.pro/garvest/wp-content/uploads/sites/21/2022/03/L-6.jpg",
-  "http://kfkit.rometheme.pro/garvest/wp-content/uploads/sites/21/2022/03/L-2.jpg",
-  "http://kfkit.rometheme.pro/garvest/wp-content/uploads/sites/21/2022/03/L-4.jpg",
-  "http://kfkit.rometheme.pro/garvest/wp-content/uploads/sites/21/2022/03/L-5.jpg",
+  "/3qfzp416.bmp",
+  "/c6p4t3d9.bmp",
+  "/fqgw928v.bmp",
+  "/s38rt5ns.bmp"
 ];
 
 const Header = () => {
