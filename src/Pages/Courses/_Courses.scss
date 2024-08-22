@@ -26,4 +26,23 @@ section.Courses {
     padding: 1.5% 0;
     width: 100%;
   }
+  /* Query Mobile */
+  @media (max-width: 1024px) {
+    div.coursesIntro {
+      height: unset;
+      padding: 5% 0;
+      text-align: center;
+      h2 {
+        font-size: 2.25rem;
+        margin-left: 0;
+      }
+    }
+    div.coursesList {
+      @include var.flex-container(row, center, center);
+      flex-wrap: wrap;
+      column-gap: 2.5%;
+      row-gap: 2.5vw;
+      padding: 2.5% 0;
+    }
+  }
 }

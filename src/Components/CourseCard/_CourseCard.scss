@@ -21,7 +21,11 @@ article.CourseCard {
     height: 100%;
     position: absolute;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 1)
+    );
     @include var.flex-container(row, center, flex-end);
     padding-bottom: 10%;
     transition: all 0.3s ease-in-out;
@@ -35,6 +39,19 @@ article.CourseCard {
     &.hovered {
       transition: all 0.3s ease-in-out;
       opacity: 1;
+    }
+  }
+  /* Query Mobile */
+  @media (max-width: 1024px) {
+    width: 46vw;
+    height: 35vh;
+    div.shadowBox {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    &:hover {
+      scale: 1.025;
     }
   }
 }
