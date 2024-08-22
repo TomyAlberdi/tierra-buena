@@ -5,10 +5,10 @@ import "swiper/css";
 import InfoHeader from "../../Components/InfoHeader/InfoHeader";
 
 let imgs = [
-  "/3qfzp416.bmp",
-  "/c6p4t3d9.bmp",
-  "/fqgw928v.bmp",
-  "/s38rt5ns.bmp"
+  "/3qfzp416.jpg",
+  "/c6p4t3d9.jpg",
+  "/fqgw928v.jpg",
+  "/s38rt5ns.jpg"
 ];
 
 const Header = () => {
