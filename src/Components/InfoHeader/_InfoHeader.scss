@@ -1,7 +1,6 @@
 @use "../../var";
 
 section.infoHeader {
-  @include var.flex-container(row, flex-start, flex-start);
   position: absolute;
   top: 0;
   left: 0;
@@ -93,6 +92,7 @@ section.infoHeader {
   /* Query Mobile */
   @media (max-width: 1024px) {
     padding: 8% 4%;
+    @include var.flex-container(column, flex-start, center);
     div.title {
       @include var.flex-container(column, center, center);
       h1 {
@@ -108,8 +108,9 @@ section.infoHeader {
     }
     div.stats {
       @include var.flex-container(row, center, center);
+      margin-top: 20%;
       gap: 0;
-      border: 1px solid red;
+      width: 100%;
       article.stat {
         @include var.flex-container(column, center, center);
         width: 40%;
