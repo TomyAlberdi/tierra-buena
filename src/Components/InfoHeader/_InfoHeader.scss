@@ -75,8 +75,7 @@ section.infoHeader {
           text-align: center;
           font-family: "Spectral", serif;
           font-size: 2.5rem;
-          line-height: 1
-        ;
+          line-height: 1;
         }
         &.plus {
           color: var.$accent-yellow;
@@ -88,7 +87,38 @@ section.infoHeader {
       }
     }
   }
-  @media(height < 900px) {
+  @media (height < 900px) {
     padding: 5% 16%;
+  }
+  /* Query Mobile */
+  @media (max-width: 1024px) {
+    padding: 8% 4%;
+    div.title {
+      @include var.flex-container(column, center, center);
+      h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        width: 100%;
+        font-size: 1.25rem;
+      }
+    }
+    div.stats {
+      @include var.flex-container(row, center, center);
+      gap: 0;
+      border: 1px solid red;
+      article.stat {
+        @include var.flex-container(column, center, center);
+        width: 40%;
+        span {
+          &.name {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }
