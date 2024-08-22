@@ -38,6 +38,10 @@ div.App {
       @media (height < 570px) {
         height: calc(100vh - 100px);
       }
+      /* Query Mobile */
+      @media (max-width: 1024px) {
+        height: unset;
+      }
     }
     @media (height > 730px) {
       margin-top: 128px;
