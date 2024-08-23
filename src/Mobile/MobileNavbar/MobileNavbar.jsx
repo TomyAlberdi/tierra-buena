@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../Hooks/AppContextComponent";
 
 const MobileNavbar = () => {
+
+  const { BASE_URL } = useContext(AppContext);
+
   return (
     <section className="MobileNavbar">
       <div className="logo">
-        <img src="/noun-tree.png" alt="logo" />
+        <img src={`${BASE_URL}/noun-tree.png`} alt="logo" />
       </div>
       <div className="text">
         <h2>Tierra Buena</h2>
