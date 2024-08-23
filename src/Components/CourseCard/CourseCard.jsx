@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../../Hooks/AppContextComponent";
 
 const CourseCard = ({ data }) => {
-  const { handleScrollToSection } = useContext(AppContext);
+  const { handleScrollToSection, BASE_URL } = useContext(AppContext);
 
   const [Hovered, setHovered] = useState(false);
 
@@ -10,7 +10,7 @@ const CourseCard = ({ data }) => {
     <article
       className="CourseCard"
       style={{
-        backgroundImage: `url(${data.imgUrl})`,
+        backgroundImage: `url(${BASE_URL}${data.imgUrl})`,
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

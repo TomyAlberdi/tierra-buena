@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BiLogoInstagramAlt } from "react-icons/bi";
+import { AppContext } from "../../Hooks/AppContextComponent";
 
 const Footer = () => {
+
+  const { BASE_URL } = useContext(AppContext);
+
   return (
     <footer>
       <section className="footerTop">
         <div className="logo">
-          <img src="/noun-tree.png" alt="logo" />
+          <img src={`${BASE_URL}/noun-tree.png`} alt="logo" />
           <div>
             <h4>Tierra Buena</h4>
             <p>Casa de campo</p>

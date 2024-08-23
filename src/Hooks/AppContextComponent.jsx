@@ -6,6 +6,8 @@ const AppContextComponent = ({ children }) => {
 
   const [navbarHeight, setNavbarHeight] = useState(0);
 
+  const BASE_URL = "/tierra-buena/";
+
   const targetCoursesAmmount = 20;
   const targetPeopleAmmount = 150;
 
@@ -26,6 +28,7 @@ const AppContextComponent = ({ children }) => {
     navbarHeight,
     setNavbarHeight,
     handleScrollToSection,
+    BASE_URL,
   };
 
   return <AppContext.Provider value={data}>{children}</AppContext.Provider>;

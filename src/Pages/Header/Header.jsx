@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import InfoHeader from "../../Components/InfoHeader/InfoHeader";
+import { AppContext } from "../../Hooks/AppContextComponent";
 
 let imgs = [
   "/3qfzp416.jpg",
@@ -12,6 +13,9 @@ let imgs = [
 ];
 
 const Header = () => {
+
+  const { BASE_URL } = useContext(AppContext);
+
   return (
     <div className="Page Header" id="Header">
       <Swiper
@@ -30,7 +34,7 @@ const Header = () => {
             <SwiperSlide
               key={index}
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${img})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${BASE_URL}${img})`,
               }}
             />
           );
