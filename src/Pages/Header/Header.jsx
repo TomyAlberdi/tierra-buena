@@ -6,10 +6,10 @@ import InfoHeader from "../../Components/InfoHeader/InfoHeader";
 import { AppContext } from "../../Hooks/AppContextComponent";
 
 let imgs = [
-  "/3qfzp416.jpg",
-  "/c6p4t3d9.jpg",
-  "/fqgw928v.jpg",
-  "/s38rt5ns.jpg"
+  "3qfzp416.jpg",
+  "c6p4t3d9.jpg",
+  "fqgw928v.jpg",
+  "s38rt5ns.jpg"
 ];
 
 const Header = () => {
