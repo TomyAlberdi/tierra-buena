@@ -4,23 +4,23 @@ import CourseCard from "../../Components/CourseCard/CourseCard";
 const coursesList = [
   {
     title: "Yoga",
-    imgUrl: "/yoga.jpg"
+    imgUrl: "yoga.jpg"
   },
   {
     title: "Cocina",
-    imgUrl: "/cooking.jpg"
+    imgUrl: "cooking.jpg"
   },
   {
     title: "Cerámica",
-    imgUrl: "/ceramics.jpg"
+    imgUrl: "ceramics.jpg"
   },
   {
     title: "Carpintería",
-    imgUrl: "/woodwork.jpg"
+    imgUrl: "woodwork.jpg"
   },
   {
     title: "Tejido",
-    imgUrl: "/knitting.jpg"
+    imgUrl: "knitting.jpg"
   },
 ];
 
