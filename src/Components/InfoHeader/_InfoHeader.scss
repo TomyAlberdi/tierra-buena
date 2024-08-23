@@ -108,7 +108,7 @@ section.infoHeader {
     }
     div.stats {
       @include var.flex-container(row, center, center);
-      margin-top: 20%;
+      margin-top: 10%;
       gap: 0;
       width: 100%;
       article.stat {
