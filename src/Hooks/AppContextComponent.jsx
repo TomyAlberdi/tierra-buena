@@ -6,7 +6,7 @@ const AppContextComponent = ({ children }) => {
 
   const [navbarHeight, setNavbarHeight] = useState(0);
 
-  const BASE_URL = "/tierra-buena/";
+  const BASE_URL = "/";
 
   const targetCoursesAmmount = 30;
   const targetPeopleAmmount = 200;
