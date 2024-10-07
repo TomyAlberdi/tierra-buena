@@ -7,17 +7,17 @@ const SecondIntro = () => {
     <section className="Page SecondIntro" id="secondIntro">
       <div className="info">
         <span className="aboutPretitle">SOBRE TIERRA BUENA</span>
-        <h2>Use su Tiempo Libre Activamente</h2>
+        <h2>La experiencia Tierra Buena</h2>
         <p>
-          Tierra buena es un lugar para aprender, conectar y compartir con otros
-          y con la naturaleza.
+          Cada vez son más las mujeres que se suman a esta comunidad. Mujeres
+          dispuestas a llevarse un objeto hecho con sus manos, una tarde
+          compartida, y el corazón pleno de alegría.
           <br />
-          Mediante diferentes cursos realizados junto a profesionales, siempre
-          aprenderás algo nuevo. Además, ¡Te llevás lo que hiciste!
+          Vení a disfrutar de Tierra Buena, ¡La tranquera está abierta!
         </p>
       </div>
       <div className="images">
-        <img src="https://kfkit.rometheme.pro/garvest/wp-content/uploads/sites/21/2022/03/F-7.jpg" />
+        <img src="secondIntro.jpg" />
         <section className="infoCard">
           <article>
             <GiWoodenChair />

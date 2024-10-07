@@ -6,10 +6,11 @@ import InfoHeader from "../../Components/InfoHeader/InfoHeader";
 import { AppContext } from "../../Hooks/AppContextComponent";
 
 let imgs = [
-  "3qfzp416.jpg",
-  "c6p4t3d9.jpg",
-  "fqgw928v.jpg",
-  "s38rt5ns.jpg"
+  "header1.jpg",
+  "header2.jpg",
+  "header3.jpg",
+  "header4.jpg",
+  "header5.jpg"
 ];
 
 const Header = () => {
@@ -34,7 +35,7 @@ const Header = () => {
             <SwiperSlide
               key={index}
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${BASE_URL}${img})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${BASE_URL}${img})`,
               }}
             />
           );

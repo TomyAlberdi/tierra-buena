@@ -7,6 +7,7 @@ div.Header {
     .swiper-slide {
       height: inherit;
       background-size: cover;
+      background-position: center;
       filter: blur(2px);
       transform: scale(1.05);
     }

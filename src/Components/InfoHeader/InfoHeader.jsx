@@ -40,8 +40,9 @@ const InfoHeader = () => {
           Tardes en <span>Tierra Buena</span>
         </h1>
         <p>
-          Encontrá inspiración en Atalaya - Un día de cursos y talleres artesanales para
-          tejer, crear y conectar con la tradición.
+          Te invitamos a compartir con nosotras una tarde de taller y
+          aprendizaje, a conocer gente con tu misma curiosidad, a hacer algo con
+          tus manos y a llevarte algo más que un objeto.
         </p>
         <button onClick={() => handleScrollToSection("secondIntro")}>
           <IoIosArrowForward /> Ver más

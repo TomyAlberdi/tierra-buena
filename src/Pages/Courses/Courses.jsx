@@ -29,7 +29,7 @@ const Courses = () => {
     <section className="Courses Page" id="courses">
       <div className="coursesIntro">
         <h2>Nuestros Talleres</h2>
-        <p>Contamos con experiencia realizando todo tipo de actividades.</p>
+        <p>Realizamos todo tipo de actividades.</p>
       </div>
       <div className="coursesList">
         {coursesList?.map((course, index) => {
