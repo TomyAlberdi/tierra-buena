@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="Navbar" ref={navbarRef}>
       <section className="iconName" onClick={() => handleScrollToSection('Header')}>
-        <img src={`${BASE_URL}/noun-tree.png`} alt="logo" />
+        <img src={`/noun-tree.png`} alt="logo" />
         <div className="name">
           <h2>Tierra Buena</h2>
           <p>Casa de campo</p>
