@@ -6,14 +6,14 @@ const SecondIntro = () => {
   return (
     <section className="Page SecondIntro" id="secondIntro">
       <div className="info">
-        <span className="aboutPretitle">SOBRE TIERRA BUENA</span>
-        <h2>La experiencia Tierra Buena</h2>
+        <span className="aboutPretitle">SOBRE TIERRABUENA</span>
+        <h2>La experiencia Tierrabuena</h2>
         <p>
           Cada vez son más las mujeres que se suman a esta comunidad. Mujeres
           dispuestas a llevarse un objeto hecho con sus manos, una tarde
           compartida, y el corazón pleno de alegría.
           <br />
-          Vení a disfrutar de Tierra Buena, ¡La tranquera está abierta!
+          Vení a disfrutar de Tierrabuena, ¡La tranquera está abierta!
         </p>
       </div>
       <div className="images">

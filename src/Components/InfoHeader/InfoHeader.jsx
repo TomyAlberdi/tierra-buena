@@ -37,7 +37,7 @@ const InfoHeader = () => {
     <section className="infoHeader" id="infoHeader">
       <div className="title">
         <h1>
-          Tardes en <span>Tierra Buena</span>
+          Tardes en <span>Tierrabuena</span>
         </h1>
         <p>
           Te invitamos a compartir con nosotras una tarde de taller y

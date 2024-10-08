@@ -21,7 +21,7 @@ const Navbar = () => {
       <section className="iconName" onClick={() => handleScrollToSection('Header')}>
         <img src={`/noun-tree.png`} alt="logo" />
         <div className="name">
-          <h2>Tierra Buena</h2>
+          <h2>Tierrabuena</h2>
           <p>Casa de campo</p>
         </div>
       </section>
