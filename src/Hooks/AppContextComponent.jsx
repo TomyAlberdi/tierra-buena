@@ -8,8 +8,8 @@ const AppContextComponent = ({ children }) => {
 
   const BASE_URL = "/";
 
-  const targetCoursesAmmount = 30;
-  const targetPeopleAmmount = 200;
+  const targetCoursesAmmount = 40;
+  const targetPeopleAmmount = 300;
 
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);

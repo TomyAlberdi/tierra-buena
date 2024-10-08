@@ -123,4 +123,14 @@ section.infoHeader {
       }
     }
   }
+  @media (width < 400px) {
+    div.title {
+      h1 {
+        font-size: 3.25rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 }
