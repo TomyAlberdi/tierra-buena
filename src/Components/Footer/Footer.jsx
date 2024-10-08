@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </section>
       <section className="footerBottom">
-        <p>Copyright 2024 - Tierra Buena SA. Todos los derechos reservados.</p>
+        <p>Copyright 2024 - Tierrabuena SA. Todos los derechos reservados.</p>
         <p>tierrabuenacasadecampo@gmail.com</p>
       </section>
     </footer>
